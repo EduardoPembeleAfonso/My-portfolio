@@ -108,7 +108,7 @@ export const ProjectsData = [
         content: 'This is my portfolio project, my website, where I introduce myself and the services I offer and the technologies I use.',
         stacks: ['HTML' , 'Css', 'JavaScript', 'NextJS'],
         url: '#',
-        github: '#'
+        github: 'https://github.com/EduardoPembeleAfonso/My-portfolio'
     },
     {
         id: Math.random(),
