@@ -9,7 +9,7 @@ export const servicesData = [
       id: Math.random(),
       icon: <SiAzuredevops size={56} className="icon" />,
       title: "Cloud Engineer",
-      content: "I have extensive knowledge and proven experience working with linux servers, server management, docker and kubernetes.",
+      content: "I have extensive knowledge and proven experience working with linux servers, server management and docker.",
     },
     {
       id: Math.random(),

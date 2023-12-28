@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Flip from "react-reveal/Fade";
+import { Roll, Zoom } from "react-reveal";
+// import { Tilt } from 'react-tilt';
 
+// icons
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { HiOutlineBuildingOffice } from "react-icons/hi2";
 import { CiLocationOn, CiViewTimeline } from "react-icons/ci";
-import Flip from "react-reveal/Fade";
-import { Roll, Zoom } from "react-reveal";
 
+// components
 import Collapse from "@/components/collapse";
 import CollapseRight from "@/components/collapseRight";
 import ShadowEffect from "@/components/shadowEffect";
@@ -30,13 +33,6 @@ export default function Document() {
     setIsOverH1(elementUnderCursor && elementUnderCursor.tagName === "SPAN");
   };
 
-  // useEffect(() => {
-  //   const isMobile = window.matchMedia('(max-width: 600px)').matches;
-  //   if (isMobile) {
-  //     Fade.reveal('.work-section-content', { delay: 500 });
-  //   }
-  // }, []);
-
   useEffect(() => {
     window.addEventListener("mousemove", updatePosition);
     return () => {
@@ -57,10 +53,18 @@ export default function Document() {
         </div>
         <ul>
           <li>Home</li>
-          <li>About</li>
-          <li>Tech Stack</li>
-          <li>Projects</li>
-          <li>Contact</li>
+          <li>
+            <Link href={"#about"}>About</Link>
+          </li>
+          <li>
+            <Link href={"#tech"}>Tech Stack</Link>
+          </li>
+          <li>
+            <Link href={'#project'}>Projects</Link>
+          </li>
+          <li>
+            <Link href={"#contact"}>Contact</Link>
+          </li>
         </ul>
       </header>
       <section className="first-section">
@@ -82,17 +86,23 @@ export default function Document() {
             </span>
             <span>I build things for web & mobile</span>
             <nav>
-              <Link href="https://github.com/EduardoPembeleAfonso">
+              <Link
+                href="https://github.com/EduardoPembeleAfonso"
+                target="_blanc"
+              >
                 <AiOutlineGithub className="icon-link" />
               </Link>
-              <Link href="https://www.linkedin.com/in/eduardo-pembele-afonso-b789441a7/">
+              <Link
+                href="https://www.linkedin.com/in/eduardo-pembele-afonso-b789441a7/"
+                target="_blanc"
+              >
                 <AiOutlineLinkedin className="icon-link" />
               </Link>
             </nav>
           </div>
         </section>
       </section>
-      <secyion className="second-section">
+      <secyion className="second-section" id="about">
         <div>
           <h3>About</h3>
           <p>
@@ -180,7 +190,7 @@ export default function Document() {
         </div>
       </section>
 
-      <section className="my-stacks">
+      <section className="my-stacks" id="tech">
         <div className="my-stacks-container">
           <header>
             <h3>My Tech Stack</h3>
@@ -203,7 +213,7 @@ export default function Document() {
         </div>
       </section>
 
-      <section className="my-projects">
+      <section className="my-projects" id="project">
         <ShadowEffect positionLeft={"70%"} positionRight={""} />
         <div className="my-projects-container">
           <header>
@@ -259,17 +269,25 @@ export default function Document() {
         </div>
       </section>
 
-      <section className="connect-with-me">
+      <section className="connect-with-me" id="contact">
         <ShadowEffect positionLeft={""} positionRight={"70%"} />
         <div className="connect-with-me-container">
           <header>
             <h4>Connect with me:</h4>
             <p>Satisfied with me? Please contact me</p>
             <div>
-              <Link href={"#"}>
+              <Link
+                href={"https://github.com/EduardoPembeleAfonso"}
+                target="_blanc"
+              >
                 <Image src={githubGray} alt="Github" width={30} height={30} />
               </Link>
-              <Link href={"#"}>
+              <Link
+                href={
+                  "https://www.linkedin.com/in/eduardo-pembele-afonso-b789441a7/"
+                }
+                target="_blanc"
+              >
                 <Image src={linkdln} alt="Github" width={30} height={30} />
               </Link>
               <Link href={"#"}>
@@ -277,6 +295,7 @@ export default function Document() {
               </Link>
             </div>
           </header>
+          {/* <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}> */}
           <form>
             <span>Contact me, let’s make magic together</span>
             <input type="text" placeholder="Name:" required />
@@ -284,6 +303,7 @@ export default function Document() {
             <textarea placeholder="Message:"></textarea>
             <button type="submit">Send</button>
           </form>
+          {/* </Tilt> */}
         </div>
       </section>
 
@@ -299,10 +319,10 @@ export default function Document() {
           <div>
             <nav>
               <Link href={"#"}>Home</Link>
-              <Link href={"#"}>About</Link>
-              <Link href={"#"}>Technologies</Link>
-              <Link href={"#"}>Projects</Link>
-              <Link href={"#"}>Contact</Link>
+              <Link href={"#about"}>About</Link>
+              <Link href={"#tech"}>Technologies</Link>
+              <Link href={"#project"}>Projects</Link>
+              <Link href={"#contact"}>Contact</Link>
             </nav>
             <span>
               Designed by <Link href={"#"}>Edvaldo Cariege</Link>
