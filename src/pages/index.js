@@ -50,9 +50,11 @@ export default function Document() {
       )
       .then(
         (result) => {
+          form.current.reset();
           setIsLoading(false);
         },
         (error) => {
+          form.current.reset();
           setIsLoading(false);
         }
       );
