@@ -1,4 +1,5 @@
 import logo from './logo.svg'
+import loading from './loading.gif'
 import nodejs from './nodejs.svg'
 import mongodb from './mongodb.svg'
 import postgres from './postgres.svg'

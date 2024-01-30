@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Flip from "react-reveal/Fade";
 import { Roll, Zoom } from "react-reveal";
-// import { Tilt } from 'react-tilt';
+import emailjs from "@emailjs/browser";
 
 // icons
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
@@ -16,6 +16,7 @@ import CollapseRight from "@/components/collapseRight";
 import ShadowEffect from "@/components/shadowEffect";
 
 import logo from "@/assets/logo.svg";
+import loading from "@/assets/loading.gif";
 import eduardo from "@/assets/eduardo.jpg";
 import { facebook, github, githubGray, link, linkdln } from "@/assets";
 import { ProjectsData, servicesData, stacksData } from "@/api/data";
@@ -23,6 +24,9 @@ import { ProjectsData, servicesData, stacksData } from "@/api/data";
 export default function Document() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isOverH1, setIsOverH1] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const form = useRef();
 
   const updatePosition = (event) => {
     const x = event.clientX;
@@ -31,6 +35,27 @@ export default function Document() {
 
     const elementUnderCursor = document.elementFromPoint(x, y - window.scrollY);
     setIsOverH1(elementUnderCursor && elementUnderCursor.tagName === "SPAN");
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_xbwruic",
+        "template_uwmg4um",
+        form.current,
+        "nwHnlgnT9whd-MdeG"
+      )
+      .then(
+        (result) => {
+          setIsLoading(false);
+        },
+        (error) => {
+          setIsLoading(false);
+        }
+      );
   };
 
   useEffect(() => {
@@ -60,7 +85,7 @@ export default function Document() {
             <Link href={"#tech"}>Tech Stack</Link>
           </li>
           <li>
-            <Link href={'#project'}>Projects</Link>
+            <Link href={"#project"}>Projects</Link>
           </li>
           <li>
             <Link href={"#contact"}>Contact</Link>
@@ -79,7 +104,7 @@ export default function Document() {
               />
             </div>
           </div>
-          <div className="first-section-content-description">
+          <div className="first-section-content-description" id="quoto">
             <span>Hi 👋,</span>
             <span>
               My name is <span className="my-name">Eduardo P. Afonso</span>
@@ -290,18 +315,20 @@ export default function Document() {
               >
                 <Image src={linkdln} alt="Github" width={30} height={30} />
               </Link>
-              <Link href={"#"}>
+              <Link href={"https://web.facebook.com/eduardo.afonsohda"}>
                 <Image src={facebook} alt="Github" width={30} height={30} />
               </Link>
             </div>
           </header>
           {/* <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}> */}
-          <form>
+          <form ref={form} onSubmit={sendEmail}>
             <span>Contact me, let’s make magic together</span>
-            <input type="text" placeholder="Name:" required />
-            <input type="email" placeholder="E-mail:" required />
-            <textarea placeholder="Message:"></textarea>
-            <button type="submit">Send</button>
+            <input type="text" name="name" placeholder="Name:" required />
+            <input type="email" name="email" placeholder="E-mail:" required />
+            <textarea name="message" placeholder="Message:"></textarea>
+            <button type="submit" className="button_send_email">
+              {isLoading ? <Image src={loading} alt="loading" /> : "Send"}
+            </button>
           </form>
           {/* </Tilt> */}
         </div>
@@ -325,7 +352,7 @@ export default function Document() {
               <Link href={"#contact"}>Contact</Link>
             </nav>
             <span>
-              Designed by <Link href={"#"}>Edvaldo Cariege</Link>
+              Designed by <Link href={"https://www.linkedin.com/in/osvaldocariege/"} target="_blanc">Edvaldo Cariege</Link>
             </span>
           </div>
         </div>

@@ -517,10 +517,6 @@ body {
   transition: all .7s ease;
 }
 
-.my-projects-container > .my-projects-container-cards > .card:hover > figure img {
-  transform: rotate(360deg);
-}
-
 .my-projects-container > .my-projects-container-cards > .card > div {
   width: 100%;
   padding: 20px;
@@ -647,6 +643,13 @@ body {
   border-radius: 10px;
   width: 100%;
   margin-bottom: 16px;
+}
+.button_send_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
 }
 
 footer.footer {
