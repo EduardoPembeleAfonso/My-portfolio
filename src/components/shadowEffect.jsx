@@ -22,12 +22,6 @@ export default function ShadowEffect({positionLeft, positionRight}) {
     useEffect(() => {
         setLeft(positionLeft)
         setRight(positionRight)
-
-        console.log('positionLeft: ', positionLeft);
-        console.log('positionRight: ', positionRight);
-        
-        console.log('right: ', right);
-        console.log('left: ', left);
         
     }, [positionLeft, positionRight, left, right])
   return (

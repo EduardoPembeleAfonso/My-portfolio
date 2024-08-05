@@ -734,14 +734,10 @@ footer.footer .footer-container > div:nth-child(2) span span:hover {
   /* transition: transform 300ms cubic-bezier(0.17, 0.67, 0.83, 0.67); */
 }
 
-
+/* mobile */
 @media (max-width: 768px) {
-  /* .first-section-content {
-    display: none;
-  } */
   body {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     padding: 10px;
     padding-left: 30%;
@@ -764,8 +760,6 @@ footer.footer .footer-container > div:nth-child(2) span span:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
-    /* background-color: red; */
     height: 51px;
   }
   .section-the-service-i-offer-container {

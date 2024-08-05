@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Flip from "react-reveal/Fade";
-import { Roll, Zoom } from "react-reveal";
 import emailjs from "@emailjs/browser";
 
 // icons
@@ -14,6 +12,7 @@ import { CiLocationOn, CiViewTimeline } from "react-icons/ci";
 import Collapse from "@/components/collapse";
 import CollapseRight from "@/components/collapseRight";
 import ShadowEffect from "@/components/shadowEffect";
+import Animation from "@/components/Animation";
 
 import logo from "@/assets/logo.svg";
 import loading from "@/assets/loading.gif";
@@ -25,6 +24,7 @@ export default function Document() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isOverH1, setIsOverH1] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   const form = useRef();
 
@@ -60,7 +60,17 @@ export default function Document() {
       );
   };
 
+  const _isMobile = () => {
+    return window.innerWidth <= 768;
+  };
+
   useEffect(() => {
+    if (_isMobile()) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+
     window.addEventListener("mousemove", updatePosition);
     return () => {
       window.removeEventListener("mousemove", updatePosition);
@@ -79,7 +89,9 @@ export default function Document() {
           <Image alt="logo" src={logo} />
         </div>
         <ul>
-          <li>Home</li>
+          <li>
+            <Link href={"#"}>Home</Link>
+          </li>
           <li>
             <Link href={"#about"}>About</Link>
           </li>
@@ -144,7 +156,11 @@ export default function Document() {
       </secyion>
       <section className="work-section">
         <h3 className="title">Work Experience</h3>
-        <Flip left>
+        <Animation
+          position="fade-right"
+          positionOffset="300"
+          positionEasing="ease-in-sine"
+        >
           <div className="work-section-content">
             <div>
               <h3>Full Stack Developer</h3>
@@ -167,11 +183,19 @@ export default function Document() {
               </div>
             </div>
           </div>
-        </Flip>
-        <Flip left>
+        </Animation>
+        <Animation
+          position="fade-right"
+          positionOffset="300"
+          positionEasing="ease-in-sine"
+        >
           <div className="work-section-line"></div>
-        </Flip>
-        <Flip left>
+        </Animation>
+        <Animation
+          position="fade-right"
+          positionOffset="300"
+          positionEasing="ease-in-sine"
+        >
           <div className="work-section-content">
             <div>
               <h3>Intern</h3>
@@ -194,25 +218,31 @@ export default function Document() {
               </div>
             </div>
           </div>
-        </Flip>
-        <Flip left>
+        </Animation>
+        <Animation
+          position="fade-right"
+          positionOffset="300"
+          positionEasing="ease-in-sine"
+        >
           <div className="work-section-line"></div>
-        </Flip>
+        </Animation>
       </section>
       <section className="section-the-service-i-offer">
         <ShadowEffect positionLeft="" positionRight="70%" />
         <div className="section-the-service-i-offer-container">
           <h3>The service i offer</h3>
           <div className="section-the-service-card-container grid md:grid-template-2">
-            <Zoom>
-              {servicesData.map((services) => (
-                <div key={services.id} className="section-the-service-card">
-                  {services.icon}
-                  <h4>{services.title}</h4>
-                  <p>{services.content}</p>
-                </div>
-              ))}
-            </Zoom>
+            {servicesData.map((services) => (
+              <Animation
+                key={services.id}
+                className="section-the-service-card"
+                position={isMobile ? "zoom-in-left" : "zoom-out-up"}
+              >
+                {services.icon}
+                <h4>{services.title}</h4>
+                <p>{services.content}</p>
+              </Animation>
+            ))}
           </div>
         </div>
       </section>
@@ -224,18 +254,23 @@ export default function Document() {
             <p>Technologies I’ve been working with recently</p>
           </header>
           <div>
-            <Roll>
-              {stacksData.map((stack) => (
+            {stacksData.map((stack) => (
+              <Animation
+                key={stack.id}
+                position={isMobile ? "fade-right" : "fade-up"}
+                positionOffset={isMobile && "300"}
+                positionEasing={isMobile && "ease-in-sine"}
+                positionDuration={isMobile && "3000"}
+              >
                 <Image
-                  key={stack.id}
                   src={stack.image}
                   alt={stack.image || "Stack"}
                   width={140}
                   height={140}
                   className="icon"
                 />
-              ))}
-            </Roll>
+              </Animation>
+            ))}
           </div>
         </div>
       </section>
@@ -249,7 +284,14 @@ export default function Document() {
           </header>
           <div className="my-projects-container-cards">
             {ProjectsData.map((project) => (
-              <div key={project.id} className="card">
+              <Animation
+                key={project.id}
+                className="card"
+                position={isMobile ? "flip-left" : "fade-up"}
+                positionAnchorPlacement={!isMobile && "center-bottom"}
+                positionEasing={isMobile && "ease-out-cubic"}
+                positionDuration={isMobile && "2000"}
+              >
                 <figure>
                   <Image
                     src={project.image}
@@ -290,7 +332,7 @@ export default function Document() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </Animation>
             ))}
           </div>
         </div>
@@ -322,7 +364,6 @@ export default function Document() {
               </Link>
             </div>
           </header>
-          {/* <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}> */}
           <form ref={form} onSubmit={sendEmail}>
             <span>Contact me, let’s make magic together</span>
             <input type="text" name="name" placeholder="Name:" required />
@@ -332,7 +373,6 @@ export default function Document() {
               {isLoading ? <Image src={loading} alt="loading" /> : "Send"}
             </button>
           </form>
-          {/* </Tilt> */}
         </div>
       </section>
 
@@ -354,7 +394,13 @@ export default function Document() {
               <Link href={"#contact"}>Contact</Link>
             </nav>
             <span>
-              Designed by <Link href={"https://www.linkedin.com/in/osvaldocariege/"} target="_blanc">Edvaldo Cariege</Link>
+              Designed by{" "}
+              <Link
+                href={"https://www.linkedin.com/in/osvaldocariege/"}
+                target="_blanc"
+              >
+                Edvaldo Cariege
+              </Link>
             </span>
           </div>
         </div>

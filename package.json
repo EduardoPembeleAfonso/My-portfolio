@@ -12,24 +12,16 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
-    "@react-spring/web": "^9.7.3",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "10.4.15",
     "emailjs": "^4.0.3",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
-    "framer-motion": "^10.16.4",
-    "gsap": "^3.12.2",
-    "gsap-trial": "^3.12.4",
     "next": "^13.5.6",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.11.0",
-    "react-motion": "^0.5.2",
-    "react-reveal": "^1.2.2",
-    "react-tilt": "^1.0.2",
-    "scrollreveal": "^4.0.9",
-    "swiper": "^10.3.1",
     "tailwindcss": "3.3.3"
   }
 }
