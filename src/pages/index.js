@@ -179,7 +179,7 @@ export default function Document() {
               </div>
               <div>
                 <CiViewTimeline />
-                <span>Jul 2021 - Present</span>
+                <span>Jul 2022 - Present</span>
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import {AiOutlineAndroid} from 'react-icons/ai'
 import { SiAzuredevops } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { BsCodeSlash, BsGit, BsFillDatabaseFill } from "react-icons/bs";
-import { dart, firebase, flutter, pnCliqueStreaming, pnClique, javascript, mongodb, nodejs, postgres, project03, project04, project05, project06, react } from "@/assets";
+import { firebase, flutter, pnCliqueStreaming, pnClique, mongodb, nodejs, postgres, project03, project04, project05, project06, react, pnCliqueCoworking, typescript, aws } from "@/assets";
 
 export const servicesData = [
     {
@@ -62,7 +62,7 @@ export const stacksData = [
     },
     {
         id: Math.random(),
-        image: dart,
+        image: aws,
     },
     {
         id: Math.random(),
@@ -70,7 +70,7 @@ export const stacksData = [
     },
     {
         id: Math.random(),
-        image: javascript,
+        image: typescript,
     },
     {
         id: Math.random(),
@@ -83,6 +83,15 @@ export const stacksData = [
 ]
 
 export const ProjectsData = [
+    {
+        id: Math.random(),
+        image: pnCliqueCoworking,
+        title: 'PN Clique Coworking',
+        content: 'This project is a website for booking coworking rooms, and its main functions include the payment method using multicaixa express and booking notifications by e-mail.',
+        stacks: ['TypeScript', 'NodeJs', 'ReactJS', 'PostgreSql'],
+        url: 'https://coworking.pnclique.com/booking',
+        github: '#'
+    },
     {
         id: Math.random(),
         image: pnClique,
@@ -118,15 +127,6 @@ export const ProjectsData = [
         stacks: ['Dart' , 'Flutter',],
         url: '#',
         github: 'https://github.com/EduardoPembeleAfonso/password-manager'
-    },
-    {
-        id: Math.random(),
-        image: project05,
-        title: 'UI and UX Designer',
-        content: 'This is a project without many features. The main aim of this project is to create beautiful, responsive screens with flutter.',
-        stacks: ['Dart' , 'Flutter',],
-        url: '#',
-        github: '#'
     },
     {
         id: Math.random(),

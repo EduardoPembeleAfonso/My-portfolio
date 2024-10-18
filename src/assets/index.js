@@ -4,8 +4,8 @@ import nodejs from './nodejs.svg'
 import mongodb from './mongodb.svg'
 import postgres from './postgres.svg'
 import flutter from './flutter.svg'
-import dart from './dart.svg'
-import javascript from './javascript.svg'
+import aws from './aws.svg'
+import typescript from './typescript.svg'
 import firebase from './firebase.svg'
 import react from './react.svg'
 import hbo from './hbo.jpg'
@@ -19,6 +19,7 @@ import facebook from './facebook.svg'
 import linkdln from './linkdln.svg'
 import githubGray from './Vector-gray.svg'
 import pnClique from './pnclique.png'
+import pnCliqueCoworking from './coworking.png'
 import pnCliqueStreaming from './streaming.png'
 
 
@@ -28,8 +29,8 @@ export {
     mongodb,
     postgres,
     flutter,
-    dart,
-    javascript,
+    aws,
+    typescript,
     firebase,
     react,
     hbo,
@@ -43,5 +44,6 @@ export {
     linkdln,
     githubGray,
     pnClique,
+    pnCliqueCoworking,
     pnCliqueStreaming
 }
