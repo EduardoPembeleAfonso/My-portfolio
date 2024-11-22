@@ -2,7 +2,7 @@ import {AiOutlineAndroid} from 'react-icons/ai'
 import { SiAzuredevops } from "react-icons/si";
 import { TbBrandJavascript } from "react-icons/tb";
 import { BsCodeSlash, BsGit, BsFillDatabaseFill } from "react-icons/bs";
-import { firebase, flutter, pnCliqueStreaming, pnClique, mongodb, nodejs, postgres, project03, project04, project05, project06, react, pnCliqueCoworking, typescript, aws } from "@/assets";
+import { firebase, flutter, pnCliqueStreaming, pnClique, mongodb, nodejs, postgres, project03, project04, project06, react, pnCliqueCoworking, typescript, aws, php, pnCliqueCar } from "@/assets";
 
 export const servicesData = [
     {
@@ -78,6 +78,10 @@ export const stacksData = [
     },
     {
         id: Math.random(),
+        image: php,
+    },
+    {
+        id: Math.random(),
         image: firebase,
     },
 ]
@@ -99,6 +103,15 @@ export const ProjectsData = [
         content: 'This project is a beautiful institutional website, which serves to present the company, its services and its employees.',
         stacks: ['JavaScript', 'SASS', 'ReactJS', 'Gsap'],
         url: 'https://www.pnclique.com',
+        github: '#'
+    },
+    {
+        id: Math.random(),
+        image: pnCliqueCar,
+        title: 'PN Clique Car',
+        content: 'Online car rental and booking site where you can rent a car without leaving your home.',
+        stacks: ['NextJS' , 'TailwindCSS'],
+        url: 'https://car.pnclique.com',
         github: '#'
     },
     {

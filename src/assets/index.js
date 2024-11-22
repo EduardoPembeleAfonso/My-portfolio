@@ -21,7 +21,8 @@ import githubGray from './Vector-gray.svg'
 import pnClique from './pnclique.png'
 import pnCliqueCoworking from './coworking.png'
 import pnCliqueStreaming from './streaming.png'
-
+import php from './php.svg'
+import pnCliqueCar from './carpnclique.png'
 
 export {
     logo,
@@ -30,6 +31,7 @@ export {
     postgres,
     flutter,
     aws,
+    php,
     typescript,
     firebase,
     react,
@@ -40,6 +42,7 @@ export {
     project04,
     project05,
     project06,
+    pnCliqueCar,
     facebook,
     linkdln,
     githubGray,
