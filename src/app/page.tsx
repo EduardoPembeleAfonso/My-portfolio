@@ -1,8 +1,6 @@
-// page.tsx
 import dynamic from "next/dynamic";
 import Sections from "@/components/Sections";
 
-// O Canvas usa WebGL: precisa rodar só no cliente.
 const Scene = dynamic(() => import("@/components/Scene"), { ssr: false });
 
 export default function Home() {

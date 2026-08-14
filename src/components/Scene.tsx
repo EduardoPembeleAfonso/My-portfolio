@@ -1,4 +1,3 @@
-//Scene.tsx
 "use client";
 
 import { useMemo, useRef } from "react";

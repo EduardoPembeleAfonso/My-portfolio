@@ -1,4 +1,3 @@
-//CameraRing.tsx
 "use client";
 
 import { useMemo, useRef } from "react";
