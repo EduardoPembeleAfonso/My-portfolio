@@ -22,6 +22,9 @@ export const projects: Project[] = [
     description:
       "Software Engineer focado no desenvolvimento de aplicações Web e Mobile de elevada performance. Apaixonado por resolver problemas complexos e otimizar a experiência do utilizador.",
     tech: ["React", "React Native", "Next.js", "Node.js", "TypeScript"],
+    links: [
+      { url: "https://www.linkedin.com/in/eduardo-pembele-afonso-b789441a7/", label: "LinkedIn →" }
+    ],
     position: [0, 0, 0],
     shape: "icosahedron",
   },

@@ -16,8 +16,11 @@ export default function Home() {
         <span className="font-display text-sm font-bold tracking-wide text-fog">
           eduardo<span className="text-glow">.dev</span>
         </span>
-        <nav className="font-mono text-xs uppercase tracking-widest text-muted">
-          <a href="#" className="transition-colors hover:text-fog">
+        <nav className="flex items-center gap-6 font-mono text-xs uppercase tracking-widest text-muted">
+          <a href="https://www.linkedin.com/in/eduardo-pembele-afonso-b789441a7/" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fog">
+            LinkedIn
+          </a>
+          <a href="/Eduardo-new-cv-2026.pdf" download="Eduardo-CV-2026.pdf" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-fog">
             Currículo
           </a>
         </nav>
