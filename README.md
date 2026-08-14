@@ -1,38 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfólio 3D — starter
 
-## Getting Started
+Esqueleto de portfólio animado inspirado na linguagem visual de sites como o
+[Messenger da Abeto](https://messenger.abeto.co/): câmera que se move por uma
+cena 3D conforme você rola a página, com nós low-poly representando cada
+projeto e um "cometa" (assinatura visual) que acompanha o progresso do scroll.
 
-First, run the development server:
+Stack: **Next.js 14 (App Router) + TypeScript + React Three Fiber + drei +
+GSAP ScrollTrigger + Tailwind**.
+
+## Como rodar
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Estrutura
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+src/
+  app/
+    layout.tsx      -> fontes (Space Grotesk, Inter, JetBrains Mono) e metadata
+    page.tsx         -> junta o Canvas 3D (fixo) com as seções de texto
+    globals.css       -> reset + acessibilidade (reduced-motion, focus-visible)
+  components/
+    Scene.tsx         -> Canvas, luzes, estrelas, pós-processamento (bloom)
+    ProjectNode.tsx    -> geometria 3D de cada projeto (auto-rotação)
+    CameraRig.tsx      -> curva Catmull-Rom que a câmera percorre no scroll
+    Sections.tsx       -> painéis de texto em HTML + ScrollTrigger
+  data/
+    projects.ts        -> ⚠️ EDITE AQUI: seus projetos, textos e posições 3D
+  lib/
+    scrollState.ts     -> ponte simples entre o scroll (GSAP) e o loop 3D (R3F)
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Onde editar primeiro
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **`src/data/projects.ts`** — troque título, descrição, tecnologias e link
+   de cada projeto. O array `position` controla onde cada nó fica no espaço
+   3D (e por consequência, por onde a câmera passa).
+2. **`tailwind.config.ts`** — paleta de cores (`ink`, `fog`, `glow`, `ember`)
+   e fontes. Foi escolhida uma paleta violeta-escuro + verde-limão para fugir
+   do "preto + neon genérico"; troque pela sua identidade.
+3. **`src/components/ProjectNode.tsx`** — troque as geometrias primitivas por
+   modelos `.glb` reais quando tiver assets (ver seção abaixo).
 
-## Learn More
+## Próximos passos sugeridos
 
-To learn more about Next.js, take a look at the following resources:
+- **Modelos 3D próprios**: exporte de Blender em `.glb`, comprima com
+  [gltf-transform](https://gltf-transform.dev/) ou Draco, e carregue com
+  `useGLTF` do `@react-three/drei` no lugar das geometrias primitivas.
+- **Cel-shading**: para o visual "cartoon" tipo Abeto, troque
+  `meshStandardMaterial` por um material de toon shading (`meshToonMaterial`
+  do Three.js, com uma `gradientMap` de 3-4 tons) e adicione contorno com
+  `@react-three/drei`'s `<Outlines />`.
+- **Loading**: adicione um `<Suspense>` com uma tela de carregamento antes do
+  `<Canvas>` ficar pronto (importante se carregar modelos `.glb` pesados).
+- **Mobile**: teste o `dpr` e a contagem de partículas em `<Stars />` em
+  aparelhos reais — é o primeiro lugar para cortar custo de GPU.
+- **Performance**: se a cena crescer, revise `three-mesh-bvh` (usado no
+  Messenger) para raycasting rápido, e `<Bloom />`/`<Vignette />` custam GPU —
+  desative em dispositivos fracos com um hook `useDeviceCapability`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Créditos de inspiração
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Direção de câmera + linguagem de "planeta pequeno" inspiradas no projeto
+[Messenger, da Abeto](https://messenger.abeto.co/) — vale ler o making-of
+deles na Awwwards e no Communication Arts para entender as decisões técnicas
+por trás do original.

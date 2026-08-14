@@ -1,0 +1,23 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection {
+  background: #c6f135;
+  color: #150f1c;
+}
+
+:focus-visible {
+  outline: 2px solid #c6f135;
+  outline-offset: 3px;
+}
