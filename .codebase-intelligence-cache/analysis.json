@@ -1,0 +1,675 @@
+{
+  "version": "v2-parser",
+  "entries": {
+    "C:/Projetos/Personal/My-portfolio/next-env.d.ts": {
+      "contentHash": "e462a655754db9df18b4a657454a7b6a88717ffded4e89403b2b3a47c6603fc3",
+      "mtimeMs": 1783095613757.8254,
+      "size": 233,
+      "cachedAtMs": 1791293135388,
+      "symbols": [],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/My-portfolio/next.config.mjs": {
+      "contentHash": "73f18ea67787ab9d40bedbf6600bc6f822dfc31347374a54677d67a36567b20b",
+      "mtimeMs": 1783095308442.639,
+      "size": 118,
+      "cachedAtMs": 1791293135402,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/next.config.mjs#nextConfig",
+          "name": "nextConfig",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/next.config.mjs",
+          "startLine": 2,
+          "endLine": 4
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/My-portfolio/postcss.config.mjs": {
+      "contentHash": "efa65c65e17d51d58570edce9d702b0604fdf6a9b8db65afaed8f075af8867c7",
+      "mtimeMs": 1783095308628.4492,
+      "size": 157,
+      "cachedAtMs": 1791293135405,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/postcss.config.mjs#config",
+          "name": "config",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/postcss.config.mjs",
+          "startLine": 2,
+          "endLine": 7
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/My-portfolio/tailwind.config.ts": {
+      "contentHash": "25937772c5bfcdb2c69be9b7d83712907f8f390de1971ac162770bd8466707b5",
+      "mtimeMs": 1783095308466.6277,
+      "size": 658,
+      "cachedAtMs": 1791293135407,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/tailwind.config.ts#config",
+          "name": "config",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/tailwind.config.ts",
+          "startLine": 3,
+          "endLine": 22
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/tailwind.config.ts",
+          "target": "tailwindcss",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx": {
+      "contentHash": "07b718b010bc018a6f93a1d4ee2b3a6083c703b8c449405c452bc20c24920f41",
+      "mtimeMs": 1784376082993.177,
+      "size": 920,
+      "cachedAtMs": 1791293135413,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx#RootLayout",
+          "name": "RootLayout",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "startLine": 29,
+          "endLine": 39
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx#display",
+          "name": "display",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "startLine": 6,
+          "endLine": 10
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx#body",
+          "name": "body",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "startLine": 12,
+          "endLine": 16
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx#mono",
+          "name": "mono",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "startLine": 18,
+          "endLine": 22
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx#metadata",
+          "name": "metadata",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "startLine": 24,
+          "endLine": 27
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "target": "next",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "target": "next/font/google",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/layout.tsx",
+          "target": "C:/Projetos/Personal/My-portfolio/src/app/globals.css",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/app/page.tsx": {
+      "contentHash": "f47f93980c34f8fcaac556e52dfcd7560ce0f09c78dafb486c7aff0a2626e1a7",
+      "mtimeMs": 1786711042721.8198,
+      "size": 1664,
+      "cachedAtMs": 1791293135417,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx#AppContent",
+          "name": "AppContent",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "startLine": 10,
+          "endLine": 43
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx#Home",
+          "name": "Home",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "startLine": 45,
+          "endLine": 51
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx#Scene",
+          "name": "Scene",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "startLine": 8,
+          "endLine": 8
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "target": "next/dynamic",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "target": "@/components/Sections",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "target": "@/context/LanguageContext",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/app/page.tsx",
+          "target": "@/components/LanguageSwitcher",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/data/projects.ts": {
+      "contentHash": "4f3b2bcef57901d13521c1c4a90464f64fb35dd1b0b71fca3c15fcde5c307397",
+      "mtimeMs": 1786710826660.4785,
+      "size": 6076,
+      "cachedAtMs": 1791293135423,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts#ProjectLink",
+          "name": "ProjectLink",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts",
+          "startLine": 3,
+          "endLine": 6
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts#Project",
+          "name": "Project",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts",
+          "startLine": 8,
+          "endLine": 18
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts#projects",
+          "name": "projects",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts",
+          "startLine": 20,
+          "endLine": 139
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/data/projects.ts",
+          "target": "@/context/LanguageContext",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/lib/scrollState.ts": {
+      "contentHash": "7b041f002b37f7c69c953a0592d2d10ad2d76e55ffd2e630e2e055b78515af07",
+      "mtimeMs": 1784376072927.0894,
+      "size": 333,
+      "cachedAtMs": 1791293135425,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/lib/scrollState.ts#scrollState",
+          "name": "scrollState",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/lib/scrollState.ts",
+          "startLine": 4,
+          "endLine": 7
+        }
+      ],
+      "dependencies": []
+    },
+    "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx": {
+      "contentHash": "468820b9b57e8a89e06f8cbf20e57cc28785f97d815cd360ebb77c3fdc9cc1b8",
+      "mtimeMs": 1786710780594.8923,
+      "size": 1318,
+      "cachedAtMs": 1791293135429,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx#LanguageContextType",
+          "name": "LanguageContextType",
+          "kind": "interface",
+          "file": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx",
+          "startLine": 7,
+          "endLine": 10
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx#Language",
+          "name": "Language",
+          "kind": "typeAlias",
+          "file": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx",
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx#LanguageProvider",
+          "name": "LanguageProvider",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx",
+          "startLine": 14,
+          "endLine": 39
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx#useLanguage",
+          "name": "useLanguage",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx",
+          "startLine": 41,
+          "endLine": 47
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx#LanguageContext",
+          "name": "LanguageContext",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx",
+          "startLine": 12,
+          "endLine": 12
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/context/LanguageContext.tsx",
+          "target": "react",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx": {
+      "contentHash": "47c63eb8edb1f076b8c93141efc4ca46dcb24ee91306b5594727775e8fa64066",
+      "mtimeMs": 1783096755382.3948,
+      "size": 1128,
+      "cachedAtMs": 1791293135432,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx#Atmosphere",
+          "name": "Atmosphere",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx",
+          "startLine": 22,
+          "endLine": 43
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx#vertexShader",
+          "name": "vertexShader",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx",
+          "startLine": 5,
+          "endLine": 11
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx#fragmentShader",
+          "name": "fragmentShader",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx",
+          "startLine": 13,
+          "endLine": 20
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Atmosphere.tsx",
+          "target": "three",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx": {
+      "contentHash": "f6807620ad2f267779329f16510e7affff7461d036043c1d3eafc47b8f305d00",
+      "mtimeMs": 1786710532834.2107,
+      "size": 1733,
+      "cachedAtMs": 1791293135436,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx#CameraRig",
+          "name": "CameraRig",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx",
+          "startLine": 9,
+          "endLine": 52
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx",
+          "target": "react",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx",
+          "target": "@react-three/fiber",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx",
+          "target": "three",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx",
+          "target": "@/lib/scrollState",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig.tsx",
+          "target": "@/data/projects",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/LanguageSwitcher.tsx": {
+      "contentHash": "ecc60b8be6e3da78b0c1fe1ce773adffdb1877b07f7deff651e040c4c0191c78",
+      "mtimeMs": 1786710790506.1316,
+      "size": 1020,
+      "cachedAtMs": 1791293135439,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/LanguageSwitcher.tsx#LanguageSwitcher",
+          "name": "LanguageSwitcher",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/LanguageSwitcher.tsx",
+          "startLine": 5,
+          "endLine": 36
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/LanguageSwitcher.tsx",
+          "target": "@/context/LanguageContext",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx": {
+      "contentHash": "5dab7e69b6ef36a8b2d277bc06f5a7a4be2187572441ec0839cb5d4e0f0adb20",
+      "mtimeMs": 1784376167115.1226,
+      "size": 2541,
+      "cachedAtMs": 1791293135443,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx#Nebula",
+          "name": "Nebula",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx",
+          "startLine": 68,
+          "endLine": 89
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx#vertexShader",
+          "name": "vertexShader",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx",
+          "startLine": 7,
+          "endLine": 13
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx#fragmentShader",
+          "name": "fragmentShader",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx",
+          "startLine": 15,
+          "endLine": 66
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx",
+          "target": "react",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx",
+          "target": "@react-three/fiber",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Nebula.tsx",
+          "target": "three",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx": {
+      "contentHash": "9e0c4d3df8b026ce5595510de23d9633965520e53a074854a578119106c19859",
+      "mtimeMs": 1786793744886.521,
+      "size": 3139,
+      "cachedAtMs": 1791293135447,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx#Geometry",
+          "name": "Geometry",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx",
+          "startLine": 8,
+          "endLine": 20
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx#ProjectNode",
+          "name": "ProjectNode",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx",
+          "startLine": 22,
+          "endLine": 104
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx",
+          "target": "react",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx",
+          "target": "@react-three/fiber",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx",
+          "target": "three",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode.tsx",
+          "target": "@/data/projects",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx": {
+      "contentHash": "5720fa1a31d0859dd3bb1e8825e948ad80dc8590bc7823b05f1a94d39cfed2d4",
+      "mtimeMs": 1786710532837.9978,
+      "size": 2499,
+      "cachedAtMs": 1791293135451,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx#Comet",
+          "name": "Comet",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "startLine": 15,
+          "endLine": 37
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx#Scene",
+          "name": "Scene",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "startLine": 39,
+          "endLine": 81
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "react",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "@react-three/fiber",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "@react-three/drei",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "@react-three/postprocessing",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "three",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "C:/Projetos/Personal/My-portfolio/src/components/CameraRig",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "C:/Projetos/Personal/My-portfolio/src/components/ProjectNode",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "@/data/projects",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "@/lib/scrollState",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "C:/Projetos/Personal/My-portfolio/src/components/Nebula",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Scene.tsx",
+          "target": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx": {
+      "contentHash": "de240e36d6a0e29eb3da8e4f0fba594f7f32b37f755c67df2f1bfd09351b1637",
+      "mtimeMs": 1786710849959.7114,
+      "size": 3162,
+      "cachedAtMs": 1791293135454,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx#Sections",
+          "name": "Sections",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "startLine": 12,
+          "endLine": 98
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "target": "react",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "target": "gsap",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "target": "gsap/ScrollTrigger",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "target": "@/data/projects",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "target": "@/lib/scrollState",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/Sections.tsx",
+          "target": "@/context/LanguageContext",
+          "type": "import"
+        }
+      ]
+    },
+    "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx": {
+      "contentHash": "c92fdf23804d35802ac73186202b80963d6e0aa5d8fc8e55b4e621ecab2da6c7",
+      "mtimeMs": 1783097829812.7253,
+      "size": 1540,
+      "cachedAtMs": 1791293135458,
+      "symbols": [
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx#SpaceDust",
+          "name": "SpaceDust",
+          "kind": "function",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx",
+          "startLine": 10,
+          "endLine": 47
+        },
+        {
+          "id": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx#COUNT",
+          "name": "COUNT",
+          "kind": "variable",
+          "file": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx",
+          "startLine": 8,
+          "endLine": 8
+        }
+      ],
+      "dependencies": [
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx",
+          "target": "react",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx",
+          "target": "@react-three/fiber",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx",
+          "target": "three",
+          "type": "import"
+        },
+        {
+          "source": "C:/Projetos/Personal/My-portfolio/src/components/SpaceDust.tsx",
+          "target": "@/lib/scrollState",
+          "type": "import"
+        }
+      ]
+    }
+  }
+}

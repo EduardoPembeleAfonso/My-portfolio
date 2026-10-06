@@ -63,6 +63,28 @@ export const projects: Project[] = [
     shape: "torusKnot",
   },
   {
+    id: "tecsep-tsg",
+    title: {
+      pt: "Portal do Cliente TecSep",
+      en: "TecSep Customer Portal",
+      es: "Portal del Cliente TecSep",
+    },
+    description: {
+      pt: "Portal do cliente que liga os utilizadores às ofertas da empresa. O projeto englobou desenvolvimento full-stack, atuando tanto no backend como no frontend.",
+      en: "Customer portal connecting users with the company's offers. The project involved full-stack development, working on both the backend and frontend.",
+      es: "Portal del cliente que conecta a los usuarios con las ofertas de la empresa. El proyecto abarcó desarrollo full-stack, trabajando tanto en el backend como en el frontend.",
+    },
+    tech: ["Python", "Flask", "Angular", "PostgreSQL"],
+    links: [
+      {
+        url: "https://www.portal.tecsep-tsg.ao/auth/login",
+        label: { pt: "Ver Portal →", en: "View Portal →", es: "Ver Portal →" },
+      },
+    ],
+    position: [2.5, 0.4, -12],
+    shape: "octahedron",
+  },
+  {
     id: "mirantes-app",
     title: {
       pt: "Mirantes App",
@@ -85,7 +107,7 @@ export const projects: Project[] = [
         label: { pt: "Google Play →", en: "Google Play →", es: "Google Play →" },
       },
     ],
-    position: [3, 0.5, -12],
+    position: [3, 0.5, -18],
     shape: "octahedron",
   },
   {
@@ -111,7 +133,7 @@ export const projects: Project[] = [
         label: { pt: "Google Play →", en: "Google Play →", es: "Google Play →" },
       },
     ],
-    position: [-2, -0.3, -18],
+    position: [-2, -0.3, -24],
     shape: "dodecahedron",
   },
   {
@@ -133,7 +155,7 @@ export const projects: Project[] = [
         label: { pt: "Ver Plataforma →", en: "View Platform →", es: "Ver Plataforma →" },
       },
     ],
-    position: [0, 0, -24],
+    position: [0, 0, -30],
     shape: "icosahedron",
   },
 ];
