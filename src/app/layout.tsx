@@ -22,8 +22,8 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seu Nome — Portfólio",
-  description: "Desenvolvedor(a) front-end. Portfólio com cena 3D animada.",
+  title: "Eduardo Afonso — Portfólio",
+  description: "Desenvolvedor de Software | Frontend & Mobile. Portfólio com cena 3D animada.",
 };
 
 export default function RootLayout({
