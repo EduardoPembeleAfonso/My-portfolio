@@ -33,7 +33,7 @@ export const projects: Project[] = [
     tech: ["React", "React Native", "Next.js", "Node.js", "TypeScript"],
     links: [
       {
-        url: "https://www.linkedin.com/in/eduardo-pembele-afonso-b789441a7/",
+        url: "https://www.linkedin.com/in/eduardo-p-afonso-b789441a7/",
         label: { pt: "LinkedIn →", en: "LinkedIn →", es: "LinkedIn →" },
       },
     ],
